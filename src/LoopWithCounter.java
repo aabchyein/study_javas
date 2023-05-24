@@ -5,7 +5,7 @@ public class LoopWithCounter {
         int line = 1;
 
         while (line <= recall) {
-            System.out.println(line);
+            System.out.println(figure);
             line = line + 1;
             figure = figure +1;
         }
