@@ -17,12 +17,13 @@ public class CasherFor {
             for (int first = 0; first < bucket.length; first = first + 1) {
                 bucket[first] = myObj.nextInt();
                 if (bucket[first] == 0) {
+                    System.out.println((first+1) + "번째 가격");
                     break;
                 } else if (bucket[first] >= 100) {
-                    System.out.println("가격: " + bucket[first]);
+                    System.out.println((first+1) + "번째 가격: " + bucket[first]);
                     bucket[first] = 0;
                 } else if (bucket[first] <100) {
-                    System.out.println("가격: " + bucket[first]);
+                    System.out.println((first+1) + "번째 가격: " + bucket[first]);
                 }
 
             }

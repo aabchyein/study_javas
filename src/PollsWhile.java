@@ -16,7 +16,7 @@ public class PollsWhile {
             while (loops) {
                 System.out.println("Exit:종료 Poll:설문 시작 Statistic:설문 통계");
                 answer = myObj.nextLine();
-                if (answer.equals("Exit")||answer.equals("E")) { // '||'표시는 or이라는 표시로 계속 다른 것도 더해서 사용할 수 있음
+                if (answer.equals("Exit")||answer.equals("E")) { // '||'표시는 or이라는 표시로 계속 다른 조건도 더해서 사용할 수 있음
                     System.out.println("-----설문 종료-----");
                     break;
                 }   else if (answer.equals("Poll")||answer.equals("P")) {
