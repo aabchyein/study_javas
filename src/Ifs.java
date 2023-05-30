@@ -11,6 +11,7 @@ public class Ifs {
 
         // 12시 이전 오전, 18시 이전 오후, 24시까지 밤
         int time = 15;
+        
         if (time < 12) {
             System.out.println("오전입니다.");
         } else if (time < 18) {
