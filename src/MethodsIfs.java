@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class MethodsIfs {
     public String times(int time) {
         String str ="";
-
-        if (time < 12) {
+        try {
+                if (time < 12) {
             str = "오전입니다.";
         } else if (time < 18) {
             str = "오후입니다.";
@@ -13,10 +13,16 @@ public class MethodsIfs {
             str = "밤입니다.";
         }
         return str;
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+    
     }
 
     public static void main(String[] args) {
-        int time = 0;
+        try {
+            
+            int time = 0;
         Scanner myObj = new Scanner(System.in);
         while (time < 25){
             MethodsIfs methodsifs = new MethodsIfs();
@@ -24,6 +30,10 @@ public class MethodsIfs {
             String result = methodsifs.times(time);
             System.out.println(result);
         }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        
         
         // return 0;
     }
