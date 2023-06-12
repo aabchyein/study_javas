@@ -48,7 +48,7 @@ public class ConnectDBs {
                     "('"+company_Id+"', '"+company+"') ";
             
             int count = statement.executeUpdate(query);
-            System.out.println(count);
+            System.out.println();
             //update, delete, insert문은 결과값이 없으므로 즉 table로 결과값을 받을 필요가 없으므로 executeUpdate를 사용한다.
 
             /*
